@@ -1,0 +1,70 @@
+@import "reset.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f9fc;
+  padding: 30px 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.canvas {
+  width: 700px;
+  height: 700px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* CONTROLS RANGE */
+.controls-range {
+  margin-bottom: 20px;
+}
+
+/* CONTROL BUTTON */
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.controls .controls-btns {
+  margin-bottom: 30px;
+}
+.controls .controls-btns button {
+  all: unset;
+  width: 80px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px 0px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.controls .controls-btns button:focus {
+  transform: scale(0.98);
+}
+
+.controls .controls-btns button#jsMode {
+  margin-right: 10px;
+}
+
+/* CONTROLS COLOR */
+.controls-colors {
+  display: flex;
+}
+
+.controls-colors .controls-color {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
